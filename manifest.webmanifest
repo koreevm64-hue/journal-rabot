@@ -1,0 +1,15 @@
+{
+  "name": "Журнал проведения работ",
+  "short_name": "Журнал работ",
+  "description": "Журнал ТО, ремонтов и дополнительных работ с голосовым вводом и поиском",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fa",
+  "theme_color": "#175a99",
+  "icons": [
+    {"src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
