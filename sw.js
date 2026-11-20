@@ -1,4 +1,4 @@
-const CACHE='service-work-log-mobile-v7';
+const CACHE='service-work-log-mobile-v8';
 const FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES.map(url=>new Request(url,{cache:'reload'})))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('service-work-log-mobile-')&&k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]))});
